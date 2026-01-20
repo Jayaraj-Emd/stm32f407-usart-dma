@@ -23,25 +23,21 @@ Features
 Repository Structure
 
 stm32f407-usart-dma/
-|
-|-- README.md
-|-- src/
-|   |-- main.c
-|   |-- gpio_driver.c
-|   |-- usart_driver.c
-|   |-- dma_driver.c
-|   |-- stm32f407.h
-|
-|-- inc/
-|   |-- gpio_driver.h
-|   |-- usart_driver.h
-|   |-- dma_driver.h
-|
-|-- startup/
-|   |-- startup_stm32f407xx.s
-|
-|-- linker/
-|   |-- stm32f407.ld
+├── README.md
+├── src/
+│   ├── main.c
+│   ├── gpio_driver.c
+│   ├── usart_driver.c
+│   ├── dma_driver.c
+│   └── stm32f407.h
+├── inc/
+│   ├── gpio_driver.h
+│   ├── usart_driver.h
+│   └── dma_driver.h
+├── startup/
+│   └── startup_stm32f407xx.s
+├── linker/
+│   └── stm32f407.ld
 
 
 Hardware Configuration
