@@ -24,20 +24,28 @@ Repository Structure
 
 stm32f407-usart-dma/
 ├── README.md
-├── src/
+├── .gitignore
+├── STM32F407VGTX_FLASH.ld
+├── STM32F407VGTX_RAM.ld
+├── Src/
 │   ├── main.c
-│   ├── gpio_driver.c
-│   ├── usart_driver.c
-│   ├── dma_driver.c
-│   └── stm32f407.h
-├── inc/
-│   ├── gpio_driver.h
-│   ├── usart_driver.h
-│   └── dma_driver.h
-├── startup/
-│   └── startup_stm32f407xx.s
-├── linker/
-│   └── stm32f407.ld
+│   ├── syscalls.c
+│   └── sysmem.c
+├── driver/
+│   ├── Inc/
+│   │   ├── stm32f407.h
+│   │   ├── stm32f407_dma_driver.h
+│   │   ├── stm32f407_gpio_driver.h
+│   │   ├── stm32f407_i2c_driver.h
+│   │   ├── stm32f407_rcc_driver.h
+│   │   └── stm32f407_usart_driver.h
+│   └── Src/
+│       ├── stm32f407_gpio_driver.c
+│       ├── stm32f407_i2c_driver.c
+│       ├── stm32f407_rcc_driver.c
+│       └── stm32f407_usart_driver.c
+└── Startup/
+    └── startup_stm32f407vgtx.s
 
 
 Hardware Configuration
